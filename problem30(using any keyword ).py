@@ -1,52 +1,49 @@
-# Tuple Function
-
 print("===================| LIST |===================")
 # Lists
-list=[1,2,3,4]
-a=any(list)  # Checks if any elements in the list are truthy (non-zero, non-empty, True)
-print("The result for list is : ", a)
+list = [1, 2, 3, 4]
+a = any(list)
+print("The result for list is : ", a)  # Output: True (at least one element is non-zero)
 
-list2=[0,False]
-c=any(list2)  # Checks if any elements in the list are truthy
-print("The result for list2 is : ", c)
+list2 = [0, False]
+c = any(list2)
+print("The result for list2 is : ", c)  # Output: False (all elements are zero or False)
 
-list3=[0,False,5]
-c=any(list3)  # Checks if any elements in the list are truthy
-print("The result for list3 is : ", c)
+list3 = [0, False, 5]
+c = any(list3)
+print("The result for list3 is : ", c)  # Output: True (5 is non-zero)
 
-list1=[1,2,3,0,4]
-b=any(list1)  # Checks if any elements in the list are truthy
-print("The result for list1 is : ", b)
+list1 = [1, 2, 3, 0, 4]
+b = any(list1)
+print("The result for list1 is : ", b)  # Output: True (at least one element is non-zero)
 
-
-list3=[]
-d=any(list3)  # Checks if any elements in the empty list are truthy (always True for empty lists)
-print("The result for list3 is : ", d)
+list3 = []
+d = any(list3)
+print("The result for list3 is : ", d)  # Output: False (empty list is considered false)
 
 # Strings
 print("===================| STRING |===================")
-s='welcome to python'
-print(any(s))  # Checks if any characters in the string are truthy (non-empty)
+s = 'welcome to python'
+print(any(s))  # Output: True (all characters are non-zero, even spaces)
 
-s='000'
-print(any(s))  # Checks if any characters in the string are truthy
+s = '000'
+print(any(s))  # Output: True (all characters are non-zero)
 
-s=' '
-print(any(s))  # Checks if any characters in the string are truthy
+s = ' '
+print(any(s))  # Output: True (space is considered non-zero)
 
 # Dictionaries
 print("===================| dictionaries |===================")
-s={0:'False', 1:'True'}
-print(any(s))  # Checks if any keys in the dictionary are truthy (non-zero, non-empty)
+s = {0: 'False', 1: 'True'}
+print(any(s))  # Output: True (1 is non-zero)
 
-s={1:'False', 2:'True'}
-print(any(s))  # Checks if any keys in the dictionary are truthy
+s = {1: 'False', 2: 'True'}
+print(any(s))  # Output: True (all keys are non-zero)
 
-s={1:'True', False:0}
-print(any(s))  # Checks if any keys in the dictionary are truthy
+s = {1: 'True', False: 0}
+print(any(s))  # Output: True (1 is non-zero)
 
-s={}
-print(any(s))  # Checks if any keys in the empty dictionary are truthy (always True for empty dictionaries)
+s = {}
+print(any(s))  # Output: False (an empty dictionary is considered false)
 
-s={'0':'True'}
-print(any(s)) 
+s = {'0': 'True'}
+print(any(s))  # Output: True (key '0' is a string, considered non-zero)
