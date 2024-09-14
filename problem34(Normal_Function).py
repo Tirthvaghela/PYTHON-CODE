@@ -1,4 +1,5 @@
 def greeting(name):
   print("Hello, " + name)
 
-greeting('tirth')
+name=input("Enter Name : ")
+greeting(name)
