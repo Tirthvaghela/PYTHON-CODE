@@ -1,4 +1,4 @@
-#Single Inheritance
+# Single Inheritance
 class Animal:
     def set_name(self):
         self.name = input("Enter Animal Name (Eg : Dog): ")
