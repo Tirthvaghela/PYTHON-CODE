@@ -7,3 +7,5 @@ try :
 
 except ValueError:
     print(f"Second number is : {b}"," ,So exception")
+else:
+    print(f"Division : {a/b}")
